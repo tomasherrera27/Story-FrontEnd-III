@@ -10,7 +10,7 @@
 
 ¡Hola! Llegó el momento de poner a prueba los conocimientos adquiridos. Esta es la oportunidad para validar tu aprendizaje hasta el momento. Se trata de una evaluación entregable, donde tendrás la posibilidad de resolver el trabajo por cuenta propia y entregarlo antes de la fecha límite.
 
-## Recordá: La fecha límite de entrega es el viernes 10, 23:59 hs Argentina, 21:59 hs Colombia.
+## Recordá: La fecha límite de entrega es el viernes 01 de Abril, 23:59 hs Argentina, 21:59 hs Colombia.
 
 **¿Cuáles son los temas que no me pueden faltar?**
 

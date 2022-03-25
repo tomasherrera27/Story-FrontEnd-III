@@ -73,6 +73,6 @@ En caso que necesites crear un componente que tenga estados, necesariamente debe
 
 La app se tiene que entregar en un repositorio de GitHub, mediante un formulario que se te entregará posteriormente.
 
--   Tendrás tiempo hasta el **viernes 10, 23:59 hs Argentina, 21:59 hs Colombia.**
+-   Tendrás tiempo hasta el **viernes 01, 23:59 hs Argentina, 21:59 hs Colombia.**
     
 - **Cualquier modificación en el repositorio de GitHub, posterior al tiempo límite establecido, no será evaluada.**

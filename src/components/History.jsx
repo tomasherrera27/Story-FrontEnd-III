@@ -1,5 +1,6 @@
 import Data from "../data.json";
 import React, { Component } from "react";
+import Choices from "./Choices";
 
 class History extends Component {
     constructor(props) {
@@ -10,9 +11,11 @@ class History extends Component {
             story: [],
             choice: {
                 a: "",
-                b: ""
-            }
-        }
+                b: "",
+            },
+            letter: "",
+            listChoices: [],
+        };
     }
     componentDidMount() {
         this.setState({
@@ -26,30 +29,38 @@ class History extends Component {
         });
     }
     opcion = (e) => {
-        if (e.target.id === "a") {
+        if (e.target.id === "a" && this.state.count <= 7) {
             this.setState({
                 story: `${Data[this.state.count ].historia}`,
                 choice: {
                     a: `${Data[this.state.count ].opciones.a}`,
                     b: `${Data[this.state.count ].opciones.b}`
                 },
-                count: this.state.count + 2
+                count: this.state.count + 2,
+                letter: e.target.id,
+                listChoices: [...this.state.listChoices, this.state.letter]
             })
-        } else if (e.target.id === "b") {
+        } else if (e.target.id === "b" && this.state.count <= 7) {
             this.setState({
                 story: `${Data[this.state.count + 1].historia}`,
                 choice: {
                     a: `${Data[this.state.count + 1].opciones.a}`,
                     b: `${Data[this.state.count + 1].opciones.b}`
                 },
-                count: this.state.count + 2
+                count: this.state.count + 2,
+                letter: e.target.id,
+                listChoices: [...this.state.listChoices, this.state.letter]
             })
+        }else{
+            alert("se termino la historia")
         }
+       
         /*
         this.setState({
             count: this.state.count+1
         })*/   
         console.log(this.state.count)
+        console.log(this.state.listChoices)
     }
 
     render() {
@@ -66,6 +77,7 @@ class History extends Component {
                         <h2 >{this.state.choice.b}</h2>
                     </div>
                 </div>
+                <Choices choice={this.state.letter} listChoices= {this.state.listChoices}/>
             </div>
         )
     }

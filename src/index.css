@@ -1,6 +1,9 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  
+}
+body {
   background-color: black;
 }
 .layout {
@@ -62,4 +65,7 @@
 .botones:active {
   position: relative;
   top: 1px;
+}
+alert{
+  background-color: white;
 }
